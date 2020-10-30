@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+ 
 
 public class MusicPlayer : MonoBehaviour
 {
@@ -10,12 +10,18 @@ public class MusicPlayer : MonoBehaviour
 
     void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+        int numMusicPlayers = FindObjectsOfType<MusicPlayer>().Length;
+        if (numMusicPlayers > 1)
+        {
+
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+        }
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }

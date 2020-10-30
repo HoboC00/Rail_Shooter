@@ -19,23 +19,28 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float controlRollFactor = -20f;
 
     float xThrow, yThrow;
+    bool isControlEnabled = true;
 
-     bool isControlEnabled = true;
+
     // Start is called before the first frame update 
 
 
 
 
     // Update is called once per frame
+
+
     void Update()
     {
-        if (isControlEnabled)
+
+        if (isControlEnabled )
         {
             ProcessTranslation();
             ProcessRotation();
         }
+            
+        
     }
-
     void OnPlayerDeath()
     {
         isControlEnabled = false;

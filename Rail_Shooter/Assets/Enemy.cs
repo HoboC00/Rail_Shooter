@@ -27,6 +27,8 @@ public class Enemy : MonoBehaviour
     {
 
         // added Score Card
+        // added Score Card 1
+
         scoreBoard.ScoreHit(scorePerHit);
       GameObject fx =  Instantiate(deathFX, transform.position, Quaternion.identity);
       fx.transform.parent = parent;

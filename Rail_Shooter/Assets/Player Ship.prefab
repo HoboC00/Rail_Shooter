@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 994355489}
   - component: {fileID: 1419207952}
   m_Layer: 0
-  m_Name: Bullets left
+  m_Name: Gun left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4863,7 +4863,7 @@ GameObject:
   - component: {fileID: 1187866060}
   - component: {fileID: 1187866059}
   m_Layer: 0
-  m_Name: Bullets Right
+  m_Name: Gun Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9618,7 +9618,7 @@ GameObject:
   - component: {fileID: 9011701743069285172}
   - component: {fileID: 2229791380139205912}
   m_Layer: 0
-  m_Name: Explosion
+  m_Name: Player Death FX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14586,6 +14586,9 @@ MonoBehaviour:
   Speed: 30
   xRange: 5
   yRange: 3
+  guns:
+  - {fileID: 1187866057}
+  - {fileID: 994355487}
   positionPitchFactor: -5
   positionYawFactor: 5
   controlPitchFactor: -20

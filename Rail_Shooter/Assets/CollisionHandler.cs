@@ -7,8 +7,8 @@ public class CollisionHandler : MonoBehaviour
 {
     [Tooltip("In seconds")]  [SerializeField]  float levelLoadDelay = 1f;
 
-    [Tooltip("Fx prefab on player")] [SerializeField] private GameObject deathFX;
-    // Start is called before the first frame update
+    [Tooltip("Fx prefab on player")] [SerializeField]  GameObject deathFX;
+    
     void OnTriggerEnter(Collider other)
     {
         StartDeathSequence();
@@ -20,7 +20,7 @@ public class CollisionHandler : MonoBehaviour
     {
         SendMessage("OnPlayerDeath");
 
-    }
+    } 
 
    private void ReloadScene()
    {

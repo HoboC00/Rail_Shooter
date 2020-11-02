@@ -26,8 +26,7 @@ public class Enemy : MonoBehaviour
     void OnParticleCollision(GameObject others)
     {
 
-        // added Score Card
-        // added Score Card 1
+        
 
         scoreBoard.ScoreHit(scorePerHit);
       GameObject fx =  Instantiate(deathFX, transform.position, Quaternion.identity);
